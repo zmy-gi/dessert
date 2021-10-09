@@ -12,10 +12,10 @@
 import random
 import time
 randint = random.randint(1, 30)  # 随机产生的数字
-time=3
+time1=3
 times=15
 corn=5000
-while time<=3 and times<=15:
+while time1<=3 and times<=15:
     print(randint)
     num=input("请输入一个数字")
 
@@ -32,16 +32,16 @@ while time<=3 and times<=15:
             print("猜小了","剩余金币：",corn)
     else:
         print("别瞎输入")
-    time=time-1
+    time1=time1-1
     times=times-1
-    if time == 0:
+    if time1 == 0:
         print("进入睡眠！")
-
+        time.sleep(10)
     elif times==0:
         print("系统锁定！")
         break
-        time.sleep(10000)
-time.sleep(10000)
+
+time.sleep(10)
 
 
 
